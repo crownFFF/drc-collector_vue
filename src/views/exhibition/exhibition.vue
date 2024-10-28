@@ -33,7 +33,7 @@ function stripHtmlTags(content) {
   return tempDiv.textContent || tempDiv.innerText || '';
 }
 const fetchItems = async (isStamp) => {
-  const url = isStamp ? 'http://localhost/api/exhibits-stamp.php' : 'http://localhost/api/exhibits-item.php';
+  const url = isStamp ? 'https://drc-collector.com/api/exhibits-stamp.php' : 'https://drc-collector.com/api/exhibits-item.php';
   const dataKey = isStamp ? 'images/stamps' : 'images/envelopes';
   const pageParam = isStamp ? { page: coverPage.value } : { coverPage: coverPage.value };
   try {
